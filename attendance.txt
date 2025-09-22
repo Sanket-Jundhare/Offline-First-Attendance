@@ -1,0 +1,32 @@
+Name:GITE SAI KIRAN, ID:2124UCEM1029, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:44 PM, Subject:CN, Device:6A:29:93:01:12:AE
+Name:TAMANNA RAJU SHAIKH, ID:2124UCEF1049, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:44 PM, Subject:CN, Device:82:4E:E5:41:E7:A1
+Name:THORAT ANANYA NITIN, ID:2124UCEF1107, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:45 PM, Subject:CN, Device:EE:DF:AF:1E:AA:AF
+Name:URHE KOMAL MANJABAPU, ID:2124UCEF1005, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:45 PM, Subject:CN, Device:CA:0D:12:90:28:5C
+Name:GADHAVE RUTUJA DATTATRAY, ID:2124UCEF1026, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:46 PM, Subject:CN, Device:AA:74:64:CA:3A:44
+Name:NAKHALE UJWAL RATNAKARRAO, ID:2124UCEM1066, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:46 PM, Subject:CN, Device:E2:FE:A3:1C:CB:BA
+Name:SATPUTE TEJAS NARAYAN, ID:2124UCEM1022, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:46 PM, Subject:CN, Device:FA:EF:90:E0:EE:29
+Name:PATIL GAYATRI VITTHAL, ID:2124UCEF1019, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:49 PM, Subject:CN, Device:B6:02:98:1A:FD:66
+Name:MADHAWAI SANSKRUTI BABASAHEB, ID:2124UCEF1102, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:49 PM, Subject:CN, Device:CA:1C:C7:2E:CC:E5
+Name:GADHAVE SHANTANU DEEPAK, ID:2124UCEM1036, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:50 PM, Subject:CN, Device:A2:D4:DB:A2:20:45
+Name:KARTIKI NILESH BORAWAKE, ID:2124UCEF1045, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:52 PM, Subject:CN, Device:CA:87:99:C3:30:5B
+Name:SAHIL KESHAV JAWALE, ID:2124UCEM1004, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:52 PM, Subject:CN, Device:76:E6:1C:75:89:F7
+Name:SAKSHI RAJENDRA RAUT, ID:2124UCEF1033, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:52 PM, Subject:CN, Device:1E:85:3C:5A:87:A8
+Name:THOMBARE GAYATRI NAMDEV, ID:2124UCEF1063, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:52 PM, Subject:CN, Device:EA:D2:1B:82:91:1C
+Name:PAGAR PRANAV GANPAT, ID:2124UCEM1039, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:52 PM, Subject:CN, Device:76:91:9E:FE:42:F2
+Name:BAIRAGI PRATIK DHARMENDRA, ID:2124UCEM1011, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:52 PM, Subject:CN, Device:2A:36:BE:7A:F5:54
+Name:HANDE GRISHMA KISHOR, ID:2124UCEF1061, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:52 PM, Subject:CN, Device:F6:03:06:F7:2A:65
+Name:NIRHALI SARVESH MAKARAND, ID:2124UCEM1125, Class:CSE, Day:Thursday, Date:2025-09-11, Time:4:53 PM, Subject:CN, Device:1A:35:4A:F8:F6:8F
+Name:SANTOSHI RAVINDRA FALLE, ID:2124UCEF1010, Class:CSE, Day:Thursday, Date:2025-09-11, Time:5:03 PM, Subject:CN, Device:0A:8C:BC:EC:C5:6C
+Name:JUNDHARE SANKET CHANGDEV, ID:2124UCEM2087, Class:CSE, Day:Friday, Date:2025-09-12, Time:3:45 PM, Subject:CIS, Device:8E:9A:D7:43:BE:1C
+Name:HANDE GRISHMA KISHOR, ID:2124UCEF1061, Class:CSE-SY, Day:Saturday, Date:2025-09-13, Time:3:25 PM, Subject:Internal Hackthon, Device:F6:03:06:F7:2A:65
+Name:KHAIRNAR VISHAL DEEPAK, ID:2124UCEM2096, Class:CSE-TY, Day:Saturday, Date:2025-09-13, Time:3:25 PM, Subject:Internal Hackthon, Device:16:CE:D5:22:C2:94
+Name:Atharv kantilal jadhav, ID:2124UDSM1011, Class:AIDS-SY, Day:Saturday, Date:2025-09-13, Time:3:25 PM, Subject:Internal Hackthon, Device:12:27:E9:FE:FE:0D
+Name:NIKAM SAKSHI GOVARDHAN, ID:2124UCEF1120, Class:CSE-SY, Day:Saturday, Date:2025-09-13, Time:3:25 PM, Subject:Internal Hackthon, Device:32:7D:48:DD:AD:DE
+Name:PUND HARSHAD SACHIN, ID:2124UCEM2002, Class:CSE-TY, Day:Saturday, Date:2025-09-13, Time:3:28 PM, Subject:Internal Hackthon, Device:0a:00:27:00:00:10
+Name:RUSHIKESH TARLE, ID:2125PCAM1084, Class:MCA-FY, Day:Saturday, Date:2025-09-13, Time:3:45 PM, Subject:Camera man, Device:46:45:AB:CF:AC:BB
+Name:PUND HARSHAD SACHIN, ID:2124UCEM2002, Class:CSE-TY, Day:Saturday, Date:2025-09-13, Time:4:06 PM, Subject:Data Science, Device:0a:00:27:00:00:10
+Name:SHUBHAM NANA NAGARE, ID:2124UMLM1022, Class:AIML-SY, Day:Monday, Date:2025-09-15, Time:3:15 PM, Subject:Economics, Device:0a:00:27:00:00:10
+Name:JUNDHARE SANKET CHANGDEV, ID:2124UCEM2087, Class:CSE-TY, Day:Monday, Date:2025-09-15, Time:3:23 PM, Subject:Economics, Device:36:67:EF:F5:03:52
+Name:JUNDHARE SANKET CHANGDEV, ID:2124UCEM2087, Class:CSE-TY, Day:Tuesday, Date:2025-09-16, Time:11:15 AM, Subject:Computer Sci, Device:6A:65:78:17:FD:4F
+Name:JUNDHARE SANKET CHANGDEV, ID:2124UCEM2087, Class:CSE-TY, Day:Tuesday, Date:2025-09-16, Time:2:15 PM, Subject:Mathematics, Device:EE:9A:0E:5B:4C:62
+Name:JUNDHARE SANKET CHANGDEV, ID:2124UCEM2087, Class:CSE-TY, Day:Saturday, Date:2025-09-20, Time:9:43 AM, Subject:Internal Hackthon, Device:0a:00:27:00:00:10

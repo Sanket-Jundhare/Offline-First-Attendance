@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance System</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+  /* --- Reset & Base --- */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+  }
+
+  /* --- Header --- */
+  header {
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+  header:hover {
+    background: linear-gradient(90deg, #0056b3, #00a1d6);
+  }
+
+  /* --- Container --- */
+  .container {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  /* --- Card --- */
+  .card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    perspective: 1000px;
+  }
+  .card:hover {
+    transform: translateY(-10px) rotateX(3deg) rotateY(3deg);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    background: #f0f8ff;
+  }
+  .card h2 {
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.3s;
+  }
+  .card h2 i {
+    font-size: 1.5rem;
+    color: #00aaff;
+  }
+
+  /* --- Form --- */
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  label {
+    font-weight: 600;
+  }
+  input, select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: all 0.3s;
+  }
+  input:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0,123,255,0.4);
+    outline: none;
+  }
+
+  /* --- Buttons --- */
+  button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  button i {
+    margin-right: 0.5rem;
+  }
+  button:hover {
+    background: linear-gradient(90deg, #0056b3, #00a1d6);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  /* --- Hidden section --- */
+  #downloadSection {
+    display: none;
+    margin-top: 1rem;
+  }
+
+  /* --- Responsive tweaks --- */
+  @media(max-width:600px){
+    header {
+      font-size: 1.5rem;
+      padding: 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <i class="fas fa-user-check"></i> Attendance System
+</header>
+
+<div class="container">
+
+  <!-- Card 1: Mark Attendance -->
+  <div class="card">
+    <h2><i class="fas fa-pen"></i> Mark Attendance</h2>
+    <form action="/submit" method="POST">
+      <div class="form-section">
+        <label for="studentId1">Student ID:</label>
+        <input type="text" id="studentId1" name="studentId" placeholder="Enter your student ID" required>
+        <button type="submit"><i class="fas fa-check-circle"></i> Mark Attendance</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Card 2: View Your Attendance -->
+  <div class="card">
+    <h2><i class="fas fa-eye"></i> View Your Attendance</h2>
+    <form action="/view" method="GET">
+      <div class="form-section">
+        <label for="studentId2">Student ID:</label>
+        <input type="text" id="studentId2" name="studentId" placeholder="Enter your student ID" required>
+        <button type="submit"><i class="fas fa-list"></i> View Attendance</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Card 3: Datewise Attendance + Password + Download -->
+  <div class="card">
+    <h2><i class="fas fa-calendar-alt"></i> Datewise Attendance</h2>
+    <form id="datewiseForm" action="/list" method="GET">
+      <div class="form-section">
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+        <button type="submit"><i class="fas fa-eye"></i> View Attendance</button>
+      </div>
+    </form>
+
+    <!-- Hidden until password validated -->
+    <div id="downloadSection">
+      <form action="/download" method="GET">
+        <div class="form-section">
+          <button type="submit"><i class="fas fa-download"></i> Download XLSX</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // Auto-fill today's date
+  const today = new Date().toISOString().split('T')[0];
+  document.getElementById('date').value = today;
+
+  // Show download button only after correct password
+  document.getElementById("datewiseForm").addEventListener("submit", function(e){
+    const pwd = document.getElementById("password").value;
+    if(pwd !== "admin123"){  // replace with your password
+      e.preventDefault();
+      alert("❌ Wrong password!");
+    } else {
+      document.getElementById("downloadSection").style.display = "block";
+    }
+  });
+</script>
+
+</body>
+</html>
+
+<!-- Card 4: Ask Attendance AI -->
+<div class="card">
+  <h2><i class="fas fa-robot"></i> Ask AI</h2>
+  <form action="/chat" method="GET">
+    <div class="form-section">
+      <!-- <label for="aiQuery">Your Question:</label>
+      <input type="text" id="aiQuery" name="query" placeholder="Ask about attendance..." required> -->
+      <button type="submit"><i class="fas fa-paper-plane"></i> Ask AI</button>
+    </div>
+  </form>
+</div>
+
